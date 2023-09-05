@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "./components/Footer";
-import HomeNavbar from "./components/HomeNavbar";
+import Footer from "../components/Footer";
+import HomeNavbar from "../components/HomeNavbar";
 import {
   createClientComponentClient,
   createServerComponentClient,
@@ -24,13 +24,13 @@ export default async function Home() {
     <div className="">
       <HomeNavbar className="" />
       <div className="bg-[#00F026]">
-        <div className="h-[100vh] p-10 bg-[url('/images/orderin_bg.png')] bg-contain bg-center bg-no-repeat">
+        <div className="h-[100vh] p-10 bg-[url('/images/orderin_bg.png')] bg-contain bg-center bg-no-repeat px-20">
           <h1 className="text-black text-3xl font-bold">
             OrderIn your desires
           </h1>
 
           <h3>Get food, snack, drinks and more deliverd</h3>
-          <div className="flex gap-10 px-10 mt-44">
+          <div className="flex gap-10  mt-44">
             <div className="flex px-2 gap-3 justify-center items-center bg-white text-black">
               <MdLocationOn />
               <input
@@ -45,12 +45,12 @@ export default async function Home() {
                 <option>Schedule delivery</option>
               </select>
             </div>
-            <button className="h-[56] rounded-full px-[16px] py-[12px] font-bold bg-black/80 text-white  hover:bg-black">
+            <button className="h-[56] rounded-full px-[16px] py-[12px] font-bold bg-black/80 text-white  hover:bg-black shadow-sm">
               Find food
             </button>
           </div>
-          <div className="mt-10 ml-10">
-            <h6>Sign in for yur recent address</h6>
+          <div className="mt-10 ">
+            <h6>Sign in for your recent address</h6>
           </div>
         </div>
       </div>
